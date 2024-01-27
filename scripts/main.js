@@ -1,3 +1,4 @@
+// main.js
 // Data structure to hold tasks for each day
 let tasksByDay = {
     'Sun': [], 'Mon': [], 'Tue': [], 'Wed': [], 'Thu': [], 'Fri': [], 'Sat': []
