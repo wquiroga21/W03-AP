@@ -5,7 +5,6 @@ let tasksByDay = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadTasksFromLocalStorage();
     setActiveDay();
     setupTaskEventListeners();
     setupClearCompletedTasksButton();
