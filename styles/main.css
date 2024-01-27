@@ -1,0 +1,176 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Replace with your preferred font */
+    background-color: #f8eee7; /* Main background color */
+    color: #333;
+}
+
+.container {
+    max-width: 600px; /* Adjust the width as necessary */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff5f5; /* Container background color */
+    border-radius: 16px; /* Rounded corners for the container */
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7c1d1e; /* Title color */
+    font-size: 48px; /* Title size */
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weekdays button {
+    background-color: transparent;
+    border: 2px solid #7c1d1e; /* Button border color */
+    padding: 10px 15px;
+    color: #7c1d1e;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners for buttons */
+}
+
+.weekdays button:hover,
+.weekdays button:focus {
+    background-color: #7c1d1e; /* Button hover/focus color */
+    color: #fff;
+    outline: none;
+}
+
+.weekdays button.active {
+    background-color: #7c1d1e;
+    color: white;
+}
+
+.top-priorities,
+.other-tasks,
+.events,
+.notes {
+    margin-bottom: 30px;
+}
+
+.top-priorities h2,
+.other-tasks h2,
+.events h2,
+.notes h2 {
+    background-color: #7c1d1e; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #e8dcd3; 
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px; 
+}
+
+ul li .task-content {
+    flex-grow: 1; 
+    margin-right: 10px; 
+}
+
+ul li .task-buttons {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.complete-btn,
+.delete-btn {
+    margin-right: 5px; 
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+textarea#notes-text,
+textarea#additional-notes {
+    width: 100%;
+    height: 100px; 
+    padding: 10px;
+    border: none;
+    background-color: #e8dcd3;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#completed-tasks h2 {
+    background-color: #f8eee7; 
+    color: black; 
+    padding: 10px;
+    border-radius: 8px; 
+    margin-bottom: 10px;
+}
+
+.completed-container {
+    background-color: #e8dcd3; 
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+.completed .task-content {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.completed .task-buttons button,
+.completed button.return-btn { 
+    text-decoration: none;
+    color: inherit; 
+    opacity: 1; 
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: #a17475;
+}
+
+.completed .return-btn {
+    text-decoration: none;
+}
+
+.task-content.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Modify responsive design here */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .weekdays button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}

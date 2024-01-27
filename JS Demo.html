@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>TO DO LIST</h1>
+        </header>
+
+        <section class="weekdays">
+            <button id="btn-Mon">Mon</button>
+            <button id="btn-Tue">Tue</button>
+            <button id="btn-Wed">Wed</button>
+            <button id="btn-Thu">Thu</button>
+            <button id="btn-Fri">Fri</button>
+            <button id="btn-Sat">Sat</button>
+            <button id="btn-Sun">Sun</button>
+        </section>
+
+        <section class="top-priorities">
+            <h2>Top priorities</h2>
+            <input type="text" id="priority-task-input" placeholder="Add new priority task">
+            <button id="add-priority-task-btn">Add</button>
+            <ul id="priority-tasks"></ul>
+        </section>
+
+        <section class="other-tasks">
+            <h2>Other tasks</h2>
+            <input type="text" id="other-task-input" placeholder="Add new other task">
+            <button id="add-other-task-btn">Add</button>
+            <ul id="other-tasks"></ul>
+        </section>
+
+        <section class="events">
+            <h2>Events</h2>
+            <input type="text" id="event-task-input" placeholder="Add new event">
+            <button id="add-event-task-btn">Add</button>
+            <ul id="events"></ul>
+        </section>
+
+        <section class="notes">
+            <h2>Notes</h2>
+            <textarea id="notes-text" placeholder="Notes"></textarea>
+        </section>
+
+        <section id="completed-tasks">
+            <div class="completed-tasks-header">
+                <h2>Completed Tasks</h2>
+                <button id="clear-completed-tasks-btn">Clear all tasks</button>
+            </div>
+            <div class="completed-container">
+                <ul id="completed-list"></ul>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <!-- Footer content -->
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/toggle.js"></script>
+</body>
+</html>
